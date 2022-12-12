@@ -1,0 +1,59 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo {
+    width: $measure*15;
+    height: $measure*15;
+    margin-left: 15px;
+}
+
+.navbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.nav-link {
+    @extend .genericStyle;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    animation: cambio-color 2s;
+}
+
+@keyframes cambio-color {
+20% {
+    color: rgb(6, 149, 102);
+}
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    @extend .genericStyle;
+    padding: 50px 100px;
+    background-color: rgb(53, 160, 120);
+    background-color: rgb(6, 149, 102);
+    margin-top: 80px;
+    ul{
+        text-decoration: none;
+        .redes{
+            margin-right: 100px;
+            .btn-floating{
+                font-size: 20px;
+            }
+        }
+    }
+    .a {
+        text-decoration: none;
+    }
+    h5 {
+        font-weight: 700;
+    }
+    .copyright {
+        font-weight: 600;
+    }
+}

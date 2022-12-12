@@ -1,0 +1,8 @@
+.genericStyle{
+    font-family: "Poppins", sans-serif;
+}
+
+@mixin margintb ($mt, $mb){
+    margin-top: $mt;
+    margin-bottom: $mb;
+}

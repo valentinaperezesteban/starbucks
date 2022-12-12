@@ -1,0 +1,217 @@
+.grid1{
+    grid-area: grid1;
+}
+
+.grid2{
+    grid-area: grid2;
+}
+
+.grid3{
+    grid-area: grid3;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "grid1 grid2 grid3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.titleCoffee{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 65px;
+    margin-left: 50px;
+}
+
+.paragraphCoffee{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+
+.sizesCoffee{
+    width: $measure*48;
+    height: $measure*20;
+    margin-left: 50px;
+}
+
+.imgcoffee{
+    width: $measure*104;
+    height: $measure*100;
+}
+
+.subtitleCoffeeUnico{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 70px;
+    margin-top: 80px;
+}
+
+.subtitleCoffee{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 70px;
+}
+
+.subtitleCoffee2{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-right: 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        "grid1 grid2 grid3";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .titleCoffee{
+        font-size: 30px;
+    }
+    .paragraphCoffee{
+        font-size: 12px;
+    }
+    .sizesCoffee{
+        width: $measure*28;
+        height: $measure*12;
+    }
+    .imgcoffee{
+        width: $measure*68;
+        height: $measure*68;
+        margin-top: 20px;
+    }
+    .subtitleCoffeeUnico{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+    .subtitleCoffee{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .subtitleCoffee2{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .btn3{
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        "grid1 grid2"
+        "grid3 grid3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleCoffee{
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .paragraphCoffee{
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .sizesCoffee{
+        width: $measure*26;
+        height: $measure*10;
+        margin-left: 30px;
+    }
+    .imgcoffee{
+        width: $measure*60;
+        height: $measure*60;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: rgba(242, 242, 242, 0.373);
+        border-radius: 200px;
+    }
+    .subtitleCoffeeUnico{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 220px;
+        margin-top: 20px;
+    }
+    .subtitleCoffee{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 220px;
+    }
+    .subtitleCoffee2{
+        font-size: 12px;
+        margin-left: 30px;
+        margin-right: 220px;
+    }
+    .btn3{
+        margin-left: 28px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        "grid1 grid2"
+        "grid3 grid3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleCoffee{
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .paragraphCoffee{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .sizesCoffee{
+        width: $measure*22;
+        height: $measure*8;
+        margin-left: 30px;
+    }
+    .imgcoffee{
+        width: $measure*44;
+        height: $measure*44;
+        margin-top: 70px;
+        margin-right: 8px;
+        background-color: rgba(242, 242, 242, 0.373);
+        border-radius: 200px;
+    }
+    .subtitleCoffeeUnico{
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 150px;
+        margin-top: 20px;
+    }
+    .subtitleCoffee{
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 150px;
+    }
+    .subtitleCoffee2{
+        font-size: 8px;
+        margin-left: 30px;
+        margin-right: 150px;
+    }
+    .btn3{
+        margin-left: 28px;
+    }
+}

@@ -1,0 +1,124 @@
+.titleAboutUs{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.subtitleAboutUs{
+    @extend .genericStyle;
+    color: $color;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-right: 160px;
+}
+
+.imgAboutUs{
+    width: $measure*66;
+    height: $measure*116;
+    margin-left: 240px;
+    margin-top: 50px;
+}
+
+.grid1About{
+    grid-area: grid1About;
+}
+
+.grid2About{
+    grid-area: grid2About;
+}
+
+.grid3About{
+    grid-area: grid3About;
+}
+
+.grilla3{
+    display: grid;
+    grid-template-areas: 
+    "grid1About grid2About"
+    "grid3About grid2About";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 900px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid2About";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 24px;
+        margin-left: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 13px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    .imgAboutUs{
+        width: $measure*48;
+        height: $measure*80;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid3About";
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 22px;
+        margin-left: 28px;
+        margin-top: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 12px;
+        margin-left: 28px;
+        margin-right: 12px;
+    }
+    .imgAboutUs{
+        width: $measure*32;
+        height: $measure*48;
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid3About";
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 18px;
+        margin-left: 24px;
+        margin-top: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 8px;
+        margin-left: 24px;
+        margin-right: 12px;
+    }
+    .imgAboutUs{
+        width: $measure*21;
+        height: $measure*38;
+        margin-top: 38px;
+    }
+}

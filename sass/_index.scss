@@ -1,0 +1,121 @@
+.gridhome1{
+    grid-area: gridhome1;
+}
+
+.gridhome2{
+    grid-area: gridhome2;
+}
+
+.envolturaprincipal{
+    display: grid;
+    grid-template-areas: 
+    "gridhome1 gridhome2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+h1 {
+    @extend .genericStyle;
+    color: $color;
+    font-size: 75px;
+    font-weight: bolder;
+    margin-left: 50px;
+    line-height: 70px;
+    margin-top: 180px;
+}
+
+.subtitle-home {
+    @extend .genericStyle;
+    color: $color;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 60px;
+    line-height: 25px;
+}
+
+.btn2 {
+    margin-left: 58px;
+}
+
+.imgbox {
+    @include margintb (50px, 40px);
+    transition: all 2s;
+    margin-left: 160px;
+}
+
+.imgbox:hover {
+    transform: rotate(4deg);
+}
+
+@media screen and (max-width: 900px){
+    h1 {
+        font-size: 55px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*72;
+        height: $measure*84;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        margin-left: 44px;
+        line-height: 50px;
+        margin-top: 110px;
+    }
+    .subtitle-home {
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 50px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (45px, 40px);
+        width: $measure*48;
+        height: $measure*60;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    h1 {
+        @include margintb (50px, 4px);
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+    .subtitle-home {
+        font-size: 10px;
+        font-weight: lighter;
+        margin-left: 24px;
+        margin-top: 2px;
+    }
+    .btn2 {
+        margin-left: 20px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*30;
+        height: $measure*34;
+        margin-left: 40px;
+    }
+}
