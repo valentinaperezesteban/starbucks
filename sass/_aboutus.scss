@@ -17,6 +17,8 @@
 }
 
 .imgAboutUs{
+    width: 300px;
+    height: 480px;
     margin-left: 240px;
     margin-top: 50px;
 }
@@ -40,6 +42,33 @@
     "grid3About grid2About";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 1080px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid2About";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 13px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    .imgAboutUs{
+        width: $measure*44;
+        height: $measure*76;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -69,7 +98,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 670px){
     .grilla3{
         display: grid;
         grid-template-areas: 
@@ -89,8 +118,60 @@
         margin-right: 12px;
     }
     .imgAboutUs{
-        width: $measure*32;
+        width: $measure*30;
         height: $measure*48;
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid3About";
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 20px;
+        margin-left: 28px;
+        margin-top: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 10px;
+        margin-left: 28px;
+        margin-right: 12px;
+    }
+    .imgAboutUs{
+        width: $measure*28;
+        height: $measure*48;
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .grilla3{
+        display: grid;
+        grid-template-areas: 
+        "grid1About grid2About"
+        "grid3About grid3About";
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .titleAboutUs{
+        font-size: 19px;
+        margin-left: 28px;
+        margin-top: 40px;
+    }
+    .subtitleAboutUs{
+        font-size: 10px;
+        margin-left: 28px;
+        margin-right: 12px;
+    }
+    .imgAboutUs{
+        width: $measure*22;
+        height: $measure*38;
         margin-top: 38px;
     }
 }
@@ -112,11 +193,11 @@
     .subtitleAboutUs{
         font-size: 8px;
         margin-left: 24px;
-        margin-right: 12px;
+        margin-right: 10px;
     }
     .imgAboutUs{
-        width: $measure*21;
-        height: $measure*38;
+        width: $measure*20;
+        height: $measure*34;
         margin-top: 38px;
     }
 }

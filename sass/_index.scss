@@ -47,6 +47,31 @@ h1 {
     transform: rotate(4deg);
 }
 
+@media screen and (max-width: 1040px){
+    h1 {
+        font-size: 54px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*70;
+        height: $measure*82;
+        margin-left: 80px;
+    }
+}
+
 @media screen and (max-width: 900px){
     h1 {
         font-size: 55px;
@@ -72,6 +97,106 @@ h1 {
     }
 }
 
+@media screen and (max-width: 740px){
+    h1 {
+        font-size: 54px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*68;
+        height: $measure*80;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*64;
+        height: $measure*76;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    h1 {
+        font-size: 48px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*56;
+        height: $measure*68;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    h1 {
+        font-size: 46px;
+        font-weight: bolder;
+        margin-left: 42px;
+        line-height: 50px;
+        margin-top: 150px;
+    }
+    .subtitle-home {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-left: 50px;
+        line-height: 15px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (50px, 40px);
+        width: $measure*52;
+        height: $measure*64;
+        margin-left: 80px;
+    }
+}
+
 @media screen and (max-width: 600px){
     h1 {
         font-size: 40px;
@@ -92,6 +217,76 @@ h1 {
         @include margintb (45px, 40px);
         width: $measure*48;
         height: $measure*60;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    h1 {
+        font-size: 36px;
+        font-weight: bolder;
+        margin-left: 44px;
+        line-height: 50px;
+        margin-top: 110px;
+    }
+    .subtitle-home {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-left: 50px;
+    }
+    .btn2 {
+        margin-left: 48px;
+    }
+    .imgbox {
+        @include margintb (45px, 40px);
+        width: $measure*44;
+        height: $measure*56;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    h1 {
+        font-size: 32px;
+        font-weight: bolder;
+        margin-left: 30px;
+        margin-top: 110px;
+    }
+    .subtitle-home {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-left: 34px;
+    }
+    .btn2 {
+        margin-left: 34px;
+    }
+    .imgbox {
+        @include margintb (45px, 40px);
+        width: $measure*38;
+        height: $measure*48;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .subtitle-home {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-left: 34px;
+    }
+    .btn2 {
+        margin-left: 34px;
+    }
+    .imgbox {
+        @include margintb (45px, 40px);
+        width: $measure*32;
+        height: $measure*40;
         margin-left: 80px;
     }
 }
